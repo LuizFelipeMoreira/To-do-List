@@ -66,12 +66,18 @@ h1 {
   background: #8f43ee;
   border: 2px solid #8f43ee;
   color: white;
+  max-width: 100%;
   border-radius: 5px;
   font-size: 1rem;
   padding: 20px;
   display: flex;
+  align-items: center;
   margin-bottom: 15px;
   justify-content: space-between;
+}
+.task-item p {
+  max-width: 30ch;
+  word-wrap: break-word;
 }
 .task-item i {
   background: #8f43ee;
