@@ -20,10 +20,24 @@ function addTask() {
   deleteItem.classList.add("far");
   deleteItem.classList.add("fa-trash-alt");
 
+  deleteItem.addEventListener("click", () =>
+    handleDelete(taskItemContainer, taskContent)
+  );
+
   taskItemContainer.appendChild(taskContent);
   taskItemContainer.appendChild(deleteItem);
   taskContainer.appendChild(taskItemContainer);
 }
+
+const handleDelete = (taskItemContainer, taskContent) => {
+  const tasks = taskContainer.childNodes;
+  for (const task of tasks) {
+    const currentTaskBeingClicked = task.firstChild.isSameNode(taskContent);
+    if (currentTaskBeingClicked) {
+      taskItemContainer.remove();
+    }
+  }
+};
 
 function handleInput() {
   const inputIsValid = validateInput();
