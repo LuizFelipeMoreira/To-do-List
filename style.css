@@ -13,7 +13,7 @@ body {
 
 .container {
   margin-top: 80px;
-  width: 800px;
+  width: 600px;
 
   border-radius: 5px;
   background: #23264e;
@@ -70,6 +70,10 @@ h1 {
   font-size: 1rem;
   padding: 20px;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   justify-content: space-between;
+}
+.task-item i {
+  background: #8f43ee;
+  cursor: pointer;
 }
