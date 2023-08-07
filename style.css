@@ -76,10 +76,35 @@ h1 {
   justify-content: space-between;
 }
 .task-item p {
+  font-size: 1.125rem;
   max-width: 30ch;
   word-wrap: break-word;
+  cursor: pointer;
 }
 .task-item i {
   background: #8f43ee;
   cursor: pointer;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+  display: flex;
+  align-items: center;
+}
+
+.completed::before {
+  content: "";
+  display: inline block;
+  background: url("./correto.png") no-repeat;
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
 }
