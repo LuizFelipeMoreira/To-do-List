@@ -29,6 +29,8 @@ function addTask() {
   taskItemContainer.appendChild(taskContent);
   taskItemContainer.appendChild(deleteItem);
   taskContainer.appendChild(taskItemContainer);
+
+  inputTask.value = "";
 }
 
 const handleClick = (taskContent) => {

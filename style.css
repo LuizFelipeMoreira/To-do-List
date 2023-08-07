@@ -39,6 +39,7 @@ h1 {
   background: #23264e;
   border: 2px solid #8f43ee;
 }
+
 .new-task-container input:focus {
   outline: none;
   border-color: #8f43ee;
